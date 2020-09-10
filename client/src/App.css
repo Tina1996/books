@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+/* 
+nav select {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
+} */
+
+.topnav .icon {
+  display: none;
+  right:60px;
+}
+.topnav {
+  overflow: hidden;
+  line-height: 60px;
+  /* background-color: #333; */
+  float: rigth !important;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav li:not(:last-child) {
+    display: none;
+  }
+  .topnav li.icon {
+    float: right !important;
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .topnav{
+    float: right !important;
+  }
+  .topnav li{
+    float: left !important;
+    font-family: 'Fredoka One', cursive;
+  }
+  
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: fixed !important;
+    right: 0px !important;
+    top: 0 !important;
+    display: block;
+  }
+  .topnav.responsive li:not(:last-child){
+    top:140px !important;
+    float: none;
+    display: block;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius  : 50%;
+    text-align: left !important;
+    line-height: 40px;
+    font-family: 'Fredoka One', cursive;
+    text-decoration:none;
+  } 
+
+  nav ul a:hover {
+    background-color: rgba(0,0,0,0);
+  }
+  .search{
+    display: none !important;
+  }
+
+  .topnav.responsive {float: right !important;}
+  .topnav.responsive  {position: relative;}
+  .topnav.responsive {
+    display: block !important;
+    width: 200px !important;
+    text-align: left !important;
+    right:0;
+    top:110px !important;
+    background-color: #555;
+    border-bottom-right-radius: 50%;
+    transition: 1s;
+    
+  }
+}
+
+@media only screen and (max-width: 992px){
+.tabs .tab a {
+    padding: 0 1px;
+}
+}
+
+@media only scree and (max-width:700px){
+  .search{
+    display: none !important;
+  }
+}
+
+
+#navbar {
+  background-color: #d32f2f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.2s;
+}
+
+#second-navbar {
+  position: relative;
+  background-color: #501111;
+  position: fixed;
+  width: 100%;
+  display: block;
+  top: 60px;
+  transition: top 0.2s;
+}
+
+.navbar-fixed{
+  position: sticky;
+  top:0;
+  width:100%;
+  overflow: hidden;
+}
+/* 
+.brand-logo{
+  left:6% !important;
+  font-family: 'Fredoka One', cursive;
+} */
+
+.nav-items{
+  font-family: 'Fredoka One', cursive;
+  float: right;
+  /* position: absolute; */
+}
+.nav-items:hover{
+  text-decoration: none !important;
+  /* position: absolute; */
+}
+
+
+.categories{
+  display:"flex";
+  justify-content:"space-around";
+  font-family: 'Rowdies', cursive;
+}
+
+.book-name{
+  font-family: 'Questrial', sans-serif;
+  color:#00bcd4;
+  margin:"0px auto";
+  text-align: center;
+}
+nav .brand-logo {
+  /* position: absolute; */
+  color: #fff;
+  /* display: inline-block; */
+  font-size: 2.1rem;
+  padding: 0;
+  left:90px !important;
+  font-family: 'Fredoka One', cursive;
+  position: fixed !important;
+  line-height: 60px !important;
+  
+}
+
+nav #navbar{
+  /* min-height: 70px; */
+  /* max-height: 70px !important; */
+  height:60px;
+}
+
+.mycard{
+  margin-top: 130px;
+}
+
+.authcard{
+  margin: 0 auto;
+  max-width: 45% !important;
+  padding: 1% 2% 2% 2%;
+  box-shadow: 3px 6px 10px;
+}
+
+@media only screen and (min-width:700px){
+  .bookCard {
+    width:20% !important;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .bookCard {
+    width:40% !important;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .authcard{
+    max-width: 70% !important;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .cartCard{
+   min-width: 90%;
+  }
+  .checkoutCard{
+    display: none;
+  }
+  .imageCard{
+    width:120px !important;
+    margin-right: 10px !important;
+  }
+  .nameCart h6{
+    font-size:20px !important;
+  }
+  .smallCart{
+    display: block !important;
+  }
+  .yourCart{
+    font-size: 40px !important;
+  }
+  .summary{
+    font-size:20px !important;
+  }
+  .authorNameCart{
+    font-size:13px !important;
+  }
+  .priceCart{
+    font-size:13px !important;
+  }
+  .removeCart{
+    font-size:20px !important;
+  }
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid rgb(185, 49, 49) !important;
+  box-shadow: 0 1px 0 0 rgb(185, 49, 49) !important;
+  font-family: 'Fredoka One', cursive !important;
+}
+.input-field input[type=number]:focus {
+  border-bottom: 1px solid rgb(185, 49, 49) !important;
+  box-shadow: 0 1px 0 0 rgb(185, 49, 49) !important;
+  font-family: 'Fredoka One', cursive !important;
+}
+
+.input-field input[type=text]:enabled{
+  font-family: 'Fredoka One', cursive !important;
+}
+
+.input-field input[type=number]:enabled{
+  font-family: 'Fredoka One', cursive !important;
+}
+
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid rgb(185, 49, 49) !important;
+  box-shadow: 0 1px 0 0 rgb(185, 49, 49) !important;
+  font-family: 'Fredoka One', cursive !important;
+}
+
+.input-field input[type=checkbox]:checked+span:not(.lever):before{
+  border-right: 2px solid  #8d1d1d !important;
+  border-bottom: 2px solid  #8d1d1d !important;
+}
+
+.input-field [type="checkbox"]+span:not(.lever){
+  padding-left: 25px !important;
+}
+
+h2{
+  font-size: 5vw !important;
+  font-family: 'Fredoka One', cursive;
+}
+
+button{
+  font-family: 'Fredoka One', cursive !important;
+}
+
+::placeholder { 
+  color: #444;
+  opacity: 1; 
+}
+
+.element{
+  padding:0 !important;
+  padding-right: 10px !important;
+}
+
+@media only screen and (max-width:500px){
+
+  #toast-container {
+  bottom: 7% !important;
+
+} 
+}
+
+
+.search{
+  width: 110px !important;
+        float: right !important;
+        box-sizing: border-box !important;
+        border: 2px solid #ccc !important;
+        border-radius: 4px !important;
+        font-size: 13px !important;
+        background-color: #fff !important;
+        outline: none !important;
+        /* background-image: url("searchicon.png"); */
+        box-shadow: 1px 1px 3px !important;
+        margin:15px auto !important;
+        height: 2.0rem !important;
+        background-position: 10px 10px !important;
+        background-repeat: no-repeat !important;
+        padding: 12px 20px 12px 10px !important;
+        -webkit-transition: width 0.4s ease-in-out !important;
+        transition: width 0.4s ease-in-out !important;
+}
+
+.search:focus {
+  width: 100% !important;
+}
+
